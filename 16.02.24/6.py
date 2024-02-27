@@ -7,7 +7,10 @@ def bishop(s_p,e_p):
         return True
     return False
 
-
+def queen(s_p,e_p):
+    if rook(s_p, e_p) or bishop(s_p, e_p):
+        return True
+    return False
 
 def main():
     word=input().lower()
@@ -15,3 +18,7 @@ def main():
     c, d = map(int, input().split())
     if word=='ладья':
         answer=rook((a,b),(c,d))
+    if word=='слон':
+        answer = bishop((a, b), (c, d))
+    if word=='ферзь':
+        answer = queen((a, b), (c, d))
