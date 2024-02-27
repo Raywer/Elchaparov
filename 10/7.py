@@ -25,5 +25,4 @@ def boo(n, m):
         boo(n, m+1)
 
 n = int(input('Введите натуральное число:'))
-h = n
 boo(n, m)
