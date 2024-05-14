@@ -25,6 +25,7 @@ def A(s):
                     n.append(num1 * num2)
                 elif op == "/":
                     n.append(num1 // num2)
+
             k.pop()
             i += 1
         elif s[i] in ['+', '-', '*', '/']:
@@ -32,10 +33,11 @@ def A(s):
                 num2 = n.pop()
                 num1 = n.pop()
                 op = k.pop()
-                if op == '+':
+                if op == '*':
                     n.append(num1 * num2)
                 elif op == '/':
                     n.append(num1 // num2)
+
             k.append(s[i])
             i += 1
     while k:
