@@ -1,7 +1,10 @@
-s = input(' '.join).split('and')
-s1 = ''
-for i in range(len(s)-1):
-    d = s[i]+'&'
-    s1 += d
-s1 += s[len(s)-1]
-print(s1)
+s = input('')
+c = input('Что меняем: ')
+n = input('На что меняем: ')
+s1 = s.split(c)
+s2 = ''
+for i in range(len(s1)-1):
+    d = s1[i]+n
+    s2 += d
+s2 += s1[len(s1)-1]
+print(s2)
