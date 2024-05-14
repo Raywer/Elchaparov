@@ -51,8 +51,6 @@ def A(s):
         elif op == "/":
             n.append(num1 // num2)
     return n[0]
-
-
 s = input('Введите выражение: ')
 result = A(s)
 print('Ответ:', result)
